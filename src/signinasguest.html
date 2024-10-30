@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sign In Page</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f0;
+    }
+    .login-container {
+      width: 300px;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    }
+    h2 {
+      text-align: center;
+    }
+    .button {
+      width: 100%;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      color: #fff;
+      cursor: pointer;
+      font-size: 16px;
+      margin-top: 10px;
+    }
+    .login-btn {
+      background-color: #4CAF50;
+    }
+    .guest-btn {
+      background-color: #FF9800;
+    }
+  </style>
+</head>
+<body>
+  <div class="login-container">
+    <h2>Welcome</h2>
+    <button class="button login-btn">Log In</button>
+    <button class="button guest-btn" onclick="signInAsGuest()">Sign in as Guest</button>
+  </div>
+
+  <script>
+    function signInAsGuest() {
+      // Simulate guest login and show a message
+      alert("You are now signed in as a guest!");
+      
+      // In a real application, you would also redirect the user to the main app
+      // location.href = '/home'; // Redirect to main app page
+    }
+  </script>
+</body>
+</html>
